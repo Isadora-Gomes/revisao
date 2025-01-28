@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#secao-login {
+    display: flex;
+    width: 1100px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#box-login, #box-welcome {
+    width: 50%;
+    height: 570px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#box-login {
+    background-color: #313131;
+    color: white;
+}
+#box-login h1 {
+    font-size: 43.7px;
+    color: #3e76b6;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+#box-login p{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+}
+#box-welcome {
+    background-color: #3e76b6;;
+    color: white;
+}
+#box-welcome h2 {
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+#box-welcome p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#box-login label {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin: 10px 0 5px;
+}
+.inserir {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #a3a2a2;
+    font-size: 16px;
+    background-color: #ffffff00;
+    color: white;
+}
+#entrar, #cadastrar-button {
+    background-color: #76afff;;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 230px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+#entrar a, #box-welcome a{
+    text-decoration: none;
+    color: white;
+}
+#entrar:hover, #cadastrar-button:hover {
+    background-color: #6b9fe9;;
+}
+.voltar {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.voltar:hover {
+    color: #3e76b6;;
+}
+/* cadastrar */
+.secao-cadastro {
+    display: flex;
+    width: 1100px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.box-cadastro, .box-bemvindo {
+    width: 50%;
+    height: 570px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-cadastro {
+    background-color: #3e76b6;;
+    color: white;
+}
+
+.box-cadastro h1 {
+    font-size: 43.7px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.box-cadastro label {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.box-bemvindo {
+    background-color: #313131;
+    color: white;
+}
+
+.box-bemvindo h2 {
+    color: #3e76b6;;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+}
+
+.box-bemvindo p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo-inserir {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #fffafa;
+    font-size: 16px;
+    background-color: #ffffff00;
+    color: white;
+    font-weight: 400;
+}
+
+#botao-cadastrar, #botao-entrar {
+    background-color: #3e76b6;;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 230px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+#botao-cadastrar a, #botao-entrar a{
+    text-decoration: none;
+    color: white;
+}
+#botao-cadastrar:hover, #botao-entrar:hover {
+    background-color: #3e76b6;;
+}
+.box-cadastro p{
+    text-align: center;
+}
+.box-cadastro a{
+    color: #313131;
+}
+.box-cadastro a:hover{
+    color: white;
+}
+.celular{
+    opacity: 0;
+}
+@media (max-width: 768px){
+    .celular{
+        opacity: 1;
+        font-weight: 400;
+    }
+    .celular a{
+        color: #438e4b;
+    }
+    #entre{
+        color: #313131;
+    }
+    body {
+        padding: 10px;
+    }
+    #secao-login, .secao-cadastro {
+        flex-direction: column;
+        width: 90%;
+        max-width: 100%;
+    }
+    #box-login, #box-welcome, .box-cadastro, .box-bemvindo {
+        width: 100%;
+        padding: 30px;
+        height: auto;
+    }
+    #box-login h1, .box-cadastro h1 {
+        font-size: 2rem;
+    }
+    #box-welcome h2, .box-bemvindo h2 {
+        font-size: 1.8rem;
+    }
+    #box-login p, .box-cadastro p, #box-welcome p, .box-bemvindo p {
+        font-size: 1rem;
+    }
+    #entrar, #cadastrar-button, #botao-cadastrar, #botao-entrar {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    #box-welcome, .box-bemvindo {
+        display: none;
+    }
+}
