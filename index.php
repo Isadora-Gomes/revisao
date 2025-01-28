@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="./img/HW-icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
@@ -46,10 +48,15 @@
                                     echo "<script> console.log('a')</script>";
                                     header('Location: dashboard.php?');
                                 } else {
-                                    echo "<p style='color:red;'>Senha incorreta</p>";
+                                    echo '<script>
+                                            document.addEventListener("DOMContentLoaded", function() {
+                                                Swal.fire({
+                                                    text: "Erro ao logar usuário: ' . $conexao->error . '",
+                                                    icon: "error"
+                                                });
+                                            });
+                                        </script>';
                                 }
-                            } else {
-                                echo "<p style='color:red;'>Email incorreto</p>";
                             }
                         }
                         $conexao->close();
