@@ -20,39 +20,8 @@
                         <input type='checkbox' onclick='mostrarSenha()'> Mostrar senha
                     </div>
 
-                     <?php
 
-                        session_start();
-                        include 'conexao.php';
-
-                        if($_SERVER["REQUEST_METHOD"] == "POST") {
-                            $var_email = $_POST["email"];
-                            $var_senha = $_POST["senha"];
-
-                            $query = "SELECT * FROM usuarios WHERE email_usuario = '$var_email'";
-
-                            $result = mysqli_query($conexao, $query);
-
-                            if($result->num_rows > 0) {
-                                $usuario_logado = $result->fetch_assoc();
-
-                                if (password_verify($var_senha, $usuario_logado['senha_usuario'])){
-                                    echo "<script> console.log('a')</script>";
-                                    $_SESSION['id'] = $usuario_logado['id_usuario'];
-                                    $_SESSION['nome'] = $usuario_logado['nome_usuario'];
-                                    $_SESSION['email'] = $usuario_logado['email_usuario'];
-                                    header('Location: dashboard.php?');
-                                } else {
-                                    echo "<p style='color:red;'>Senha incorreta</p>";
-                                }
-                            } else {
-                                echo "<p style='color:red;'>Email incorreto</p>";
-                            }
-                        }
-                        $conexao->close();
-                    ?> 
-
-                    <button id="entrar" type="submit">Entrar</button>
+                    <button id="entrar"> <a href="./dashboard.php"> Entrar</button>
                     <p class="celular">Não tem uma conta? <a href="./cadastro.php">Cadastre-se!</a></p>
                 </form>
         </div>
