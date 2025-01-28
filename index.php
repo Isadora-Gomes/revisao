@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/HW-icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
@@ -40,10 +37,10 @@
                                 $usuario_logado = $result->fetch_assoc();
 
                                 if (password_verify($var_senha, $usuario_logado['senha_usuario'])){
+                                    echo "<script> console.log('a')</script>";
                                     $_SESSION['id'] = $usuario_logado['id_usuario'];
                                     $_SESSION['nome'] = $usuario_logado['nome_usuario'];
                                     $_SESSION['email'] = $usuario_logado['email_usuario'];
-                                    echo "<script> console.log('a')</script>";
                                     header('Location: dashboard.php?');
                                 } else {
                                     echo "<p style='color:red;'>Senha incorreta</p>";
