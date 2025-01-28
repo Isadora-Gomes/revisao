@@ -55,15 +55,6 @@
                                             });
                                         </script>';
                                 }
-                            } else {
-                                echo '<script>
-                                        document.addEventListener("DOMContentLoaded", function() {
-                                            Swal.fire({
-                                                text: "Erro ao logar usuário: ' . $conexao->error . '",
-                                                icon: "error"
-                                            });
-                                        });
-                                    </script>';
                             }
                         }
                         $conexao->close();
